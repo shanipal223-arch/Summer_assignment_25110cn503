@@ -11,7 +11,7 @@ int main() {
     if (num == 0) {
         product = 0;
     } else {
-        // Process each digit
+        
         while (num != 0) {
             rem = num % 10;
             product *= rem;
