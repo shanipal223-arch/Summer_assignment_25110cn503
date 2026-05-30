@@ -28,7 +28,7 @@ int main() {
             }
         }
 
-        // If it is still prime, print it
+        
         if (isPrime == 1) {
             printf("%d ", i);
         }
