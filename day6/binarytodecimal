@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int binary = 1101; 
+    int decimal = 0;
+    int w = 1;    
+
+    
+    while (binary > 0) {
+        int rem = binary % 10;  
+        decimal = decimal + (rem * w);
+        w = w * 2;     
+        binary = binary / 10;    
+    }
+
+    printf("Decimal value: %d\n", decimal);
+    return 0;
+}
