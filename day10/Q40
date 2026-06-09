@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int rows;
+
+    
+    printf("Enter the number of rows: ");
+    if (scanf("%d", &rows) != 1 || rows <= 0) {
+        printf("Please enter a valid positive integer.\n");
+        return 1;
+    }
+
+    
+    for (int i = 0; i < rows; i++) {
+        
+        
+        for (int space = 0; space < rows - i - 1; space++) {
+            printf(" ");
+        }
+
+        
+        for (int j = 0; j <= i; j++) {
+            
+            printf("%c ", 'A' + j); 
+        }
+
+
+        printf("\n");
+    }
+
+    return 0;
+}
