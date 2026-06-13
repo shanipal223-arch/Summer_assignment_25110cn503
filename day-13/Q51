@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    
+    int arr[] = {34, 12, 89, 5, 47, 91, 23};
+    
+    
+    int size = sizeof(arr) / sizeof(arr[0]);
+    
+
+    int largest = arr[0];
+    int smallest = arr[0];
+    
+    
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > largest) {
+            largest = arr[i];
+        }
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    
+    
+    printf("Largest Element: %d\n", largest);
+    printf("Smallest Element: %d\n", smallest);
+    
+    return 0;
+}
